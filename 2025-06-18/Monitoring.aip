@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="22.7" version="22.7" Modules="professional" RootPath="." Language="en" Id="{50F4F747-A600-4DB6-90C3-CD55DC61F132}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_ThemeStyle" Value="aero" MultiBuildValue="DefaultBuild:default" MsiKey="AI_ThemeStyle"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPNOREPAIR" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="AiPreferFastOem" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="Manufacturer" Value="TechSupport"/>
+    <ROW Property="ProductCode" Value="1033:{B46574D6-2A73-49E9-A4AC-ECD43375FDF3} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Monitoring"/>
+    <ROW Property="ProductVersion" Value="1.3" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{1247B823-325C-4B33-B9E0-8193AE33DDC6}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{BEAC81C5-7E64-47A3-91F4-BC25C3ACA39D}"/>
+    <ROW Component="ProductInformation" Value="{4B8B6F7A-2137-4D15-B09B-A9708E893BD5}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_ExePath" ComponentId="{4EA2C418-1454-4BB5-81DC-B93FA05F508F}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="APPDIR" ComponentId="{BEAC81C5-7E64-47A3-91F4-BC25C3ACA39D}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="Azure.Core.dll" ComponentId="{B871FC8D-E6AA-443A-ACB7-A567DF2C8306}" Directory_="APPDIR" Attributes="0" KeyPath="Azure.Core.dll"/>
+    <ROW Component="Azure.Core.xml" ComponentId="{2C2FEAA3-DE33-4A75-B96D-7ABA5168D379}" Directory_="APPDIR" Attributes="0" KeyPath="Azure.Core.xml" Type="0"/>
+    <ROW Component="Azure.Data.Tables.dll" ComponentId="{BEE8637D-34BC-4115-9661-547AF3506181}" Directory_="APPDIR" Attributes="0" KeyPath="Azure.Data.Tables.dll"/>
+    <ROW Component="Azure.Storage.Blobs.dll" ComponentId="{078927FD-A4E8-4EE8-A073-553D4184D92B}" Directory_="APPDIR" Attributes="0" KeyPath="Azure.Storage.Blobs.dll"/>
+    <ROW Component="Azure.Storage.Common.dll" ComponentId="{753C220F-DC59-42E8-BE93-800E192CD1B1}" Directory_="APPDIR" Attributes="0" KeyPath="Azure.Storage.Common.dll"/>
+    <ROW Component="CollectionIntervalDays" ComponentId="{6B9484B0-155C-46C4-B5CC-EAC69EAB8306}" Directory_="APPDIR" Attributes="4" KeyPath="CollectionIntervalDays"/>
+    <ROW Component="CurrentVersion" ComponentId="{EBE6A615-C153-4070-8095-168B8E0117EF}" Directory_="APPDIR" Attributes="4" KeyPath="CurrentVersion"/>
+    <ROW Component="LastCheckedTime" ComponentId="{EF0A24CF-D90B-4F62-A286-F22C6506F937}" Directory_="APPDIR" Attributes="4" KeyPath="LastCheckedTime"/>
+    <ROW Component="Microsoft.Bcl.AsyncInterfaces.dll" ComponentId="{3A8AE34F-2650-4259-8D69-0DE682DCD6A8}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Bcl.AsyncInterfaces.dll"/>
+    <ROW Component="Microsoft.Win32.Registry.dll" ComponentId="{D05341A4-692C-4052-A0AA-107FC959DE9A}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Win32.Registry.dll"/>
+    <ROW Component="Monitoring" ComponentId="{867329F5-7980-4423-9F14-3AC950A2B07B}" Directory_="APPDIR" Attributes="260" KeyPath="Monitoring"/>
+    <ROW Component="New_Key" ComponentId="{EF030806-3114-49DF-8215-8CB73190BC55}" Directory_="APPDIR" Attributes="4" KeyPath="New_Key"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{A37A1BD1-6F5B-41A0-A93B-24D13D25657C}" Directory_="APPDIR" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{4B8B6F7A-2137-4D15-B09B-A9708E893BD5}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="System.Buffers.dll" ComponentId="{73639E75-BA99-4E72-BF98-B058AC2DCA31}" Directory_="APPDIR" Attributes="0" KeyPath="System.Buffers.dll"/>
+    <ROW Component="System.ClientModel.dll" ComponentId="{1D2282CE-D16F-457E-8232-AC286EAFB87E}" Directory_="APPDIR" Attributes="0" KeyPath="System.ClientModel.dll"/>
+    <ROW Component="System.CodeDom.dll" ComponentId="{EEA5CE24-3BC7-4A47-B0F5-416E90AC915C}" Directory_="APPDIR" Attributes="0" KeyPath="System.CodeDom.dll"/>
+    <ROW Component="System.Diagnostics.DiagnosticSource.dll" ComponentId="{AAC59566-E78E-4CC3-86A4-6A4BAA193C32}" Directory_="APPDIR" Attributes="0" KeyPath="System.Diagnostics.DiagnosticSource.dll"/>
+    <ROW Component="System.IO.Hashing.dll" ComponentId="{E26EE33C-05E3-45DA-9FE2-5495B18CEDD0}" Directory_="APPDIR" Attributes="0" KeyPath="System.IO.Hashing.dll"/>
+    <ROW Component="System.Memory.Data.dll" ComponentId="{587ABC10-C6FF-4410-A1EA-09668047FEC4}" Directory_="APPDIR" Attributes="0" KeyPath="System.Memory.Data.dll"/>
+    <ROW Component="System.Memory.dll" ComponentId="{5C8577A1-C369-4357-9F27-1E77AE10CA0C}" Directory_="APPDIR" Attributes="0" KeyPath="System.Memory.dll"/>
+    <ROW Component="System.Numerics.Vectors.dll" ComponentId="{363EF924-C91A-4BB5-A281-C751BA35E311}" Directory_="APPDIR" Attributes="0" KeyPath="System.Numerics.Vectors.dll"/>
+    <ROW Component="System.Runtime.CompilerServices.Unsafe.dll" ComponentId="{152C1AC6-D51F-4F72-8EB4-6F7ED0375970}" Directory_="APPDIR" Attributes="0" KeyPath="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW Component="System.Security.AccessControl.dll" ComponentId="{FD65927E-685A-4B23-BE5D-B8C263DBF2E1}" Directory_="APPDIR" Attributes="0" KeyPath="System.Security.AccessControl.dll"/>
+    <ROW Component="System.Security.Principal.Windows.dll" ComponentId="{0C686B7A-F4DC-482D-B25D-5DCF29CD8FA4}" Directory_="APPDIR" Attributes="0" KeyPath="System.Security.Principal.Windows.dll"/>
+    <ROW Component="System.Text.Encodings.Web.dll" ComponentId="{E0C1A984-DC6F-4583-ADF9-D10B6DA0DB20}" Directory_="APPDIR" Attributes="0" KeyPath="System.Text.Encodings.Web.dll"/>
+    <ROW Component="System.Text.Json.dll" ComponentId="{8F74F436-0D33-40EC-84FF-D2B78663C718}" Directory_="APPDIR" Attributes="0" KeyPath="System.Text.Json.dll"/>
+    <ROW Component="System.Threading.Tasks.Extensions.dll" ComponentId="{C11FE8E1-A07E-4C0B-AFE9-6F3F3B2F2F6B}" Directory_="APPDIR" Attributes="0" KeyPath="System.Threading.Tasks.Extensions.dll"/>
+    <ROW Component="System.ValueTuple.dll" ComponentId="{D920C00F-8A11-4F7C-97A9-4EFD44D4E0E4}" Directory_="APPDIR" Attributes="0" KeyPath="System.ValueTuple.dll"/>
+    <ROW Component="TelemetryMonitoringService.exe" ComponentId="{DAD15285-CE76-491D-9F30-820587DA5602}" Directory_="APPDIR" Attributes="0" KeyPath="TelemetryMonitoringService.exe"/>
+    <ROW Component="Windows" ComponentId="{0D65952A-EAFB-452C-A661-DF3960A6B426}" Directory_="APPDIR" Attributes="4" KeyPath="Windows"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Azure.Core.dll" Component_="Azure.Core.dll" FileName="AZUREC~1.DLL|Azure.Core.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Azure.Core.dll" SelfReg="false"/>
+    <ROW File="Azure.Core.xml" Component_="Azure.Core.xml" FileName="AZUREC~1.XML|Azure.Core.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Azure.Core.xml" SelfReg="false"/>
+    <ROW File="Azure.Data.Tables.dll" Component_="Azure.Data.Tables.dll" FileName="AZURED~1.DLL|Azure.Data.Tables.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Azure.Data.Tables.dll" SelfReg="false"/>
+    <ROW File="Azure.Data.Tables.xml" Component_="Azure.Core.xml" FileName="AZURED~1.XML|Azure.Data.Tables.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Azure.Data.Tables.xml" SelfReg="false"/>
+    <ROW File="Azure.Storage.Blobs.dll" Component_="Azure.Storage.Blobs.dll" FileName="AZURES~1.DLL|Azure.Storage.Blobs.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Azure.Storage.Blobs.dll" SelfReg="false"/>
+    <ROW File="Azure.Storage.Blobs.xml" Component_="Azure.Core.xml" FileName="AZURES~1.XML|Azure.Storage.Blobs.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Azure.Storage.Blobs.xml" SelfReg="false"/>
+    <ROW File="Azure.Storage.Common.dll" Component_="Azure.Storage.Common.dll" FileName="AZURES~2.DLL|Azure.Storage.Common.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Azure.Storage.Common.dll" SelfReg="false"/>
+    <ROW File="Azure.Storage.Common.xml" Component_="Azure.Core.xml" FileName="AZURES~2.XML|Azure.Storage.Common.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Azure.Storage.Common.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Bcl.AsyncInterfaces.dll" Component_="Microsoft.Bcl.AsyncInterfaces.dll" FileName="MICROS~1.DLL|Microsoft.Bcl.AsyncInterfaces.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Bcl.AsyncInterfaces.xml" Component_="Azure.Core.xml" FileName="MICROS~1.XML|Microsoft.Bcl.AsyncInterfaces.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Win32.Registry.dll" Component_="Microsoft.Win32.Registry.dll" FileName="MICROS~2.DLL|Microsoft.Win32.Registry.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Microsoft.Win32.Registry.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Win32.Registry.xml" Component_="Azure.Core.xml" FileName="MICROS~2.XML|Microsoft.Win32.Registry.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Microsoft.Win32.Registry.xml" SelfReg="false"/>
+    <ROW File="Newtonsoft.JsonCopy.xml" Component_="Azure.Core.xml" FileName="NEWTON~1.XML|Newtonsoft.Json - Copy.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Newtonsoft.Json - Copy.xml" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Newtonsoft.Json.dll" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.xml" Component_="Azure.Core.xml" FileName="NEWTON~2.XML|Newtonsoft.Json.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\Newtonsoft.Json.xml" SelfReg="false"/>
+    <ROW File="System.Buffers.dll" Component_="System.Buffers.dll" FileName="SYSTEM~1.DLL|System.Buffers.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Buffers.dll" SelfReg="false"/>
+    <ROW File="System.Buffers.xml" Component_="Azure.Core.xml" FileName="SYSTEM~1.XML|System.Buffers.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Buffers.xml" SelfReg="false"/>
+    <ROW File="System.ClientModel.dll" Component_="System.ClientModel.dll" FileName="SYSTEM~2.DLL|System.ClientModel.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.ClientModel.dll" SelfReg="false"/>
+    <ROW File="System.ClientModel.xml" Component_="Azure.Core.xml" FileName="SYSTEM~2.XML|System.ClientModel.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.ClientModel.xml" SelfReg="false"/>
+    <ROW File="System.CodeDom.dll" Component_="System.CodeDom.dll" FileName="SYSTEM~3.DLL|System.CodeDom.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.CodeDom.dll" SelfReg="false"/>
+    <ROW File="System.CodeDom.xml" Component_="Azure.Core.xml" FileName="SYSTEM~3.XML|System.CodeDom.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.CodeDom.xml" SelfReg="false"/>
+    <ROW File="System.Diagnostics.DiagnosticSource.dll" Component_="System.Diagnostics.DiagnosticSource.dll" FileName="SYSTEM~4.DLL|System.Diagnostics.DiagnosticSource.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Diagnostics.DiagnosticSource.dll" SelfReg="false"/>
+    <ROW File="System.Diagnostics.DiagnosticSource.xml" Component_="Azure.Core.xml" FileName="SYSTEM~4.XML|System.Diagnostics.DiagnosticSource.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Diagnostics.DiagnosticSource.xml" SelfReg="false"/>
+    <ROW File="System.IO.Hashing.dll" Component_="System.IO.Hashing.dll" FileName="SYSTEM~5.DLL|System.IO.Hashing.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.IO.Hashing.dll" SelfReg="false"/>
+    <ROW File="System.IO.Hashing.xml" Component_="Azure.Core.xml" FileName="SYSTEM~5.XML|System.IO.Hashing.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.IO.Hashing.xml" SelfReg="false"/>
+    <ROW File="System.Memory.Data.dll" Component_="System.Memory.Data.dll" FileName="SYSTEM~6.DLL|System.Memory.Data.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Memory.Data.dll" SelfReg="false"/>
+    <ROW File="System.Memory.Data.xml" Component_="Azure.Core.xml" FileName="SYSTEM~6.XML|System.Memory.Data.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Memory.Data.xml" SelfReg="false"/>
+    <ROW File="System.Memory.dll" Component_="System.Memory.dll" FileName="SYSTEM~7.DLL|System.Memory.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Memory.dll" SelfReg="false"/>
+    <ROW File="System.Memory.xml" Component_="Azure.Core.xml" FileName="SYSTEM~7.XML|System.Memory.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Memory.xml" SelfReg="false"/>
+    <ROW File="System.Numerics.Vectors.dll" Component_="System.Numerics.Vectors.dll" FileName="SYSTEM~8.DLL|System.Numerics.Vectors.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Numerics.Vectors.dll" SelfReg="false"/>
+    <ROW File="System.Numerics.Vectors.xml" Component_="Azure.Core.xml" FileName="SYSTEM~8.XML|System.Numerics.Vectors.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Numerics.Vectors.xml" SelfReg="false"/>
+    <ROW File="System.Runtime.CompilerServices.Unsafe.dll" Component_="System.Runtime.CompilerServices.Unsafe.dll" FileName="SYSTEM~9.DLL|System.Runtime.CompilerServices.Unsafe.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.CompilerServices.Unsafe.xml" Component_="Azure.Core.xml" FileName="SYSTEM~9.XML|System.Runtime.CompilerServices.Unsafe.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml" SelfReg="false"/>
+    <ROW File="System.Security.AccessControl.dll" Component_="System.Security.AccessControl.dll" FileName="SYSTE~10.DLL|System.Security.AccessControl.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Security.AccessControl.dll" SelfReg="false"/>
+    <ROW File="System.Security.AccessControl.xml" Component_="Azure.Core.xml" FileName="SYSTE~10.XML|System.Security.AccessControl.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Security.AccessControl.xml" SelfReg="false"/>
+    <ROW File="System.Security.Principal.Windows.dll" Component_="System.Security.Principal.Windows.dll" FileName="SYSTE~11.DLL|System.Security.Principal.Windows.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Security.Principal.Windows.dll" SelfReg="false"/>
+    <ROW File="System.Security.Principal.Windows.xml" Component_="Azure.Core.xml" FileName="SYSTE~11.XML|System.Security.Principal.Windows.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Security.Principal.Windows.xml" SelfReg="false"/>
+    <ROW File="System.Text.Encodings.Web.dll" Component_="System.Text.Encodings.Web.dll" FileName="SYSTE~12.DLL|System.Text.Encodings.Web.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Text.Encodings.Web.dll" SelfReg="false"/>
+    <ROW File="System.Text.Encodings.Web.xml" Component_="Azure.Core.xml" FileName="SYSTE~12.XML|System.Text.Encodings.Web.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Text.Encodings.Web.xml" SelfReg="false"/>
+    <ROW File="System.Text.Json.dll" Component_="System.Text.Json.dll" FileName="SYSTE~13.DLL|System.Text.Json.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Text.Json.dll" SelfReg="false"/>
+    <ROW File="System.Text.Json.xml" Component_="Azure.Core.xml" FileName="SYSTE~13.XML|System.Text.Json.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Text.Json.xml" SelfReg="false"/>
+    <ROW File="System.Threading.Tasks.Extensions.dll" Component_="System.Threading.Tasks.Extensions.dll" FileName="SYSTE~14.DLL|System.Threading.Tasks.Extensions.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Threading.Tasks.Extensions.dll" SelfReg="false"/>
+    <ROW File="System.Threading.Tasks.Extensions.xml" Component_="Azure.Core.xml" FileName="SYSTE~14.XML|System.Threading.Tasks.Extensions.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.Threading.Tasks.Extensions.xml" SelfReg="false"/>
+    <ROW File="System.ValueTuple.dll" Component_="System.ValueTuple.dll" FileName="SYSTE~15.DLL|System.ValueTuple.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.ValueTuple.dll" SelfReg="false"/>
+    <ROW File="System.ValueTuple.xml" Component_="Azure.Core.xml" FileName="SYSTE~15.XML|System.ValueTuple.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\System.ValueTuple.xml" SelfReg="false"/>
+    <ROW File="TelemetryMonitoringService.exe.config" Component_="Azure.Core.xml" FileName="TELEME~1.CON|TelemetryMonitoringService.exe.config" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\TelemetryMonitoringService.exe.config" SelfReg="false"/>
+    <ROW File="TelemetryMonitoringService.pdb" Component_="TelemetryMonitoringService.exe" FileName="TELEME~1.PDB|TelemetryMonitoringService.pdb" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\TelemetryMonitoringService.pdb" SelfReg="false"/>
+    <ROW File="TelemetryMonitoringService.exe" Component_="TelemetryMonitoringService.exe" FileName="TELEME~1.EXE|TelemetryMonitoringService.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\TelemetryMonitoringService\TelemetryMonitoringService\bin\Debug\TelemetryMonitoringService.exe" SelfReg="false" DigSign="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="249"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="251"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="2" CabsLocation="1" CompressCabs="false" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="2" PackageType="1" FilesInsideExe="true" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" UACExecutionLevel="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="MessageDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MessageDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="PowerShellScriptLauncher.dll" SourcePath="&lt;AI_CUSTACTS&gt;PowerShellScriptLauncher.dll"/>
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="MessageDlg" Control="Ok" Type="PushButton" X="280" Y="90" Width="56" Height="17" Attributes="2" Text="[ButtonText_OK]" Order="200" TextLocId="-" MsiKey="MessageDlg#Ok"/>
+    <ROW Dialog_="MessageDlg" Control="Continue" Type="PushButton" X="280" Y="90" Width="56" Height="17" Attributes="2" Text="[ButtonText_Continue]" Order="300" TextLocId="-" MsiKey="MessageDlg#Continue"/>
+    <ROW Dialog_="MessageDlg" Control="TryAgain" Type="PushButton" X="280" Y="90" Width="56" Height="17" Attributes="2" Text="[ButtonText_TryAgain]" Order="400" TextLocId="-" MsiKey="MessageDlg#TryAgain"/>
+    <ROW Dialog_="MessageDlg" Control="Yes" Type="PushButton" X="280" Y="90" Width="56" Height="17" Attributes="2" Text="[ButtonText_Yes]" Order="500" TextLocId="-" MsiKey="MessageDlg#Yes"/>
+    <ROW Dialog_="MessageDlg" Control="No" Type="PushButton" X="280" Y="90" Width="56" Height="17" Attributes="2" Text="[ButtonText_No]" Order="600" TextLocId="-" MsiKey="MessageDlg#No"/>
+    <ROW Dialog_="MessageDlg" Control="Retry" Type="PushButton" X="280" Y="90" Width="56" Height="17" Attributes="2" Text="[ButtonText_Retry]" Order="700" TextLocId="-" MsiKey="MessageDlg#Retry"/>
+    <ROW Dialog_="MessageDlg" Control="Abort" Type="PushButton" X="280" Y="90" Width="56" Height="17" Attributes="2" Text="[ButtonText_Abort]" Order="800" TextLocId="-" MsiKey="MessageDlg#Abort"/>
+    <ROW Dialog_="MessageDlg" Control="Cancel" Type="PushButton" X="280" Y="90" Width="56" Height="17" Attributes="2" Text="[ButtonText_Cancel]" Order="900" TextLocId="-" MsiKey="MessageDlg#Cancel"/>
+    <ROW Dialog_="MessageDlg" Control="Text" Type="Text" X="45" Y="20" Width="270" Height="55" Attributes="190611" Text="Default Text" Order="1000" TextLocId="-" MsiKey="MessageDlg#Text"/>
+    <ROW Dialog_="MessageDlg" Control="Icon" Type="Icon" X="15" Y="15" Width="24" Height="24" Attributes="5242881" Text="[InfoIcon]" Order="1100" MsiKey="MessageDlg#Icon"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="CustomActionData" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DATA_SETTER_2" Type="51" Source="CustomActionData" Target="AFAAYQByAGEAbQBzAAIAAQBTAGMAcgBpAHAAdAACACMAIABHAGUAdAAgAGEAbABsACAAcAByAG8AYwBlAHMAcwBlAHMAIAB3AGgAbwBzAGUAIABuAGEAbQBlACAAcwB0AGEAcgB0AHMAIAB3AGkAdABoACAAIgBUAGUAbABlAG0AZQB0AHIAeQAiAA0ACgAkAHAAcgBvAGMAZQBzAHMAZQBzACAAPQAgAEcAZQB0AC0AUAByAG8AYwBlAHMAcwAgAHwAIABXAGgAZQByAGUALQBPAGIAagBlAGMAdAAgAFsAXAB7AF0AIAAkAF8ALgBOAGEAbQBlACAALQBsAGkAawBlACAAIgBUAGUAbABlAG0AZQB0AHIAeQBNAG8AbgBpAHQAbwByAGkAbgBnAFMAZQByAHYAaQBjAGUAKgAiACAAWwBcAH0AXQANAAoADQAKAGkAZgAgACgAJABwAHIAbwBjAGUAcwBzAGUAcwApACAAWwBcAHsAXQANAAoAIAAgACAAIAAjACAAUwB0AG8AcAAgAGUAYQBjAGgAIABwAHIAbwBjAGUAcwBzACAAZgBvAHIAYwBpAGIAbAB5AA0ACgAgACAAIAAgAGYAbwByAGUAYQBjAGgAIAAoACQAcAByAG8AYwAgAGkAbgAgACQAcAByAG8AYwBlAHMAcwBlAHMAKQAgAFsAXAB7AF0ADQAKACAAIAAgACAAIAAgACAAIAB0AHIAeQAgAFsAXAB7AF0ADQAKACAAIAAgACAAIAAgACAAIAAgACAAIAAgAFMAdABvAHAALQBQAHIAbwBjAGUAcwBzACAALQBJAGQAIAAkAHAAcgBvAGMALgBJAGQAIAAtAEYAbwByAGMAZQAgAC0ARQByAHIAbwByAEEAYwB0AGkAbwBuACAAUwB0AG8AcAANAAoAIAAgACAAIAAgACAAIAAgACAAIAAgACAAVwByAGkAdABlAC0ASABvAHMAdAAgACIAUwB0AG8AcABwAGUAZAAgAHAAcgBvAGMAZQBzAHMAIAAkACgAJABwAHIAbwBjAC4ATgBhAG0AZQApACAAKABQAEkARAAgACQAKAAkAHAAcgBvAGMALgBJAGQAKQApACIADQAKACAAIAAgACAAIAAgACAAIABbAFwAfQBdAA0ACgAgACAAIAAgACAAIAAgACAAYwBhAHQAYwBoACAAWwBcAHsAXQANAAoAIAAgACAAIAAgACAAIAAgACAAIAAgACAAVwByAGkAdABlAC0AVwBhAHIAbgBpAG4AZwAgACIARgBhAGkAbABlAGQAIAB0AG8AIABzAHQAbwBwACAAcAByAG8AYwBlAHMAcwAgACQAKAAkAHAAcgBvAGMALgBOAGEAbQBlACkAIAAoAFAASQBEACAAJAAoACQAcAByAG8AYwAuAEkAZAApACkAOgAgACQAXwAiAA0ACgAgACAAIAAgACAAIAAgACAAWwBcAH0AXQANAAoAIAAgACAAIABbAFwAfQBdAA0ACgBbAFwAfQBdACAAZQBsAHMAZQAgAFsAXAB7AF0ADQAKACAAIAAgACAAVwByAGkAdABlAC0ASABvAHMAdAAgACIATgBvACAAdABlAGwAZQBtAGUAdAByAHkAIABwAHIAbwBjAGUAcwBzAGUAcwAgAGYAbwB1AG4AZAAgAHIAdQBuAG4AaQBuAGcALgAiAA0ACgBbAFwAfQBdAA0ACg=="/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractFiles" Type="1" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="PowerShellScriptInline" Type="1" Source="PowerShellScriptLauncher.dll" Target="RunPowerShellScript" Options="1" AdditionalSeq="AI_DATA_SETTER_2"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+    <ROW Action="TelemetryMonitoringService.exe" Type="3282" Source="TelemetryMonitoringService.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
+    <ROW Feature_="MainFeature" Component_="Azure.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="Azure.Core.xml"/>
+    <ROW Feature_="MainFeature" Component_="Azure.Data.Tables.dll"/>
+    <ROW Feature_="MainFeature" Component_="Azure.Storage.Blobs.dll"/>
+    <ROW Feature_="MainFeature" Component_="Azure.Storage.Common.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Bcl.AsyncInterfaces.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Win32.Registry.dll"/>
+    <ROW Feature_="MainFeature" Component_="Newtonsoft.Json.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Buffers.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ClientModel.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.CodeDom.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Diagnostics.DiagnosticSource.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.Hashing.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Memory.Data.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Memory.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Numerics.Vectors.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.AccessControl.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Principal.Windows.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Text.Encodings.Web.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Text.Json.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Threading.Tasks.Extensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ValueTuple.dll"/>
+    <ROW Feature_="MainFeature" Component_="TelemetryMonitoringService.exe"/>
+    <ROW Feature_="MainFeature" Component_="LastCheckedTime"/>
+    <ROW Feature_="MainFeature" Component_="New_Key"/>
+    <ROW Feature_="MainFeature" Component_="Windows"/>
+    <ROW Feature_="MainFeature" Component_="CurrentVersion"/>
+    <ROW Feature_="MainFeature" Component_="Monitoring"/>
+    <ROW Feature_="MainFeature" Component_="CollectionIntervalDays"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="RemoveExistingProducts" Condition="AI_UPGRADE&lt;&gt;&quot;No&quot;" Sequence="1401" SeqType="0" MsiKey="RemoveExistingProducts"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1397"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractFiles" Sequence="1399" Builds="DefaultBuild"/>
+    <ROW Action="AI_DATA_SETTER" Sequence="1398"/>
+    <ROW Action="TelemetryMonitoringService.exe" Sequence="6401"/>
+    <ROW Action="PowerShellScriptInline" Sequence="1403"/>
+    <ROW Action="AI_DATA_SETTER_2" Sequence="1402"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="AdvancedInstaller" Root="-1" Key="Software\Caphyon\Advanced Installer" Name="\"/>
+    <ROW Registry="Caphyon" Root="-1" Key="Software\Caphyon" Name="\"/>
+    <ROW Registry="CircleOfBytes" Root="2" Key="Software\CircleOfBytes" Name="\"/>
+    <ROW Registry="CollectionIntervalDays" Root="2" Key="Software\CircleOfBytes\TracePointAnalytics" Name="CollectionIntervalDays" Value="#1" Component_="CollectionIntervalDays" VirtualValue="#"/>
+    <ROW Registry="CurrentVersion" Root="2" Key="Software\Microsoft\Windows\CurrentVersion" Name="+" Component_="CurrentVersion"/>
+    <ROW Registry="LZMA" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA" Name="\"/>
+    <ROW Registry="LastCheckedTime" Root="2" Key="Software\CircleOfBytes\TracePointAnalytics" Name="LastCheckedTime" Value="2025-06-17 00:00:00" Component_="LastCheckedTime"/>
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Monitoring" Root="2" Key="Software\Microsoft\Windows\CurrentVersion\Run" Name="Monitoring" Value="[#TelemetryMonitoringService.exe]" Component_="Monitoring"/>
+    <ROW Registry="New_Key" Root="2" Key="Software\Microsoft" Name="+" Component_="New_Key"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductCode" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]" Name="\"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="ProductVersion" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="\"/>
+    <ROW Registry="Run" Root="2" Key="Software\Microsoft\Windows\CurrentVersion\Run" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Software_1" Root="2" Key="Software" Name="\"/>
+    <ROW Registry="TracePointAnalytics" Root="2" Key="Software\CircleOfBytes\TracePointAnalytics" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+    <ROW Registry="Windows" Root="2" Key="Software\Microsoft\Windows" Name="+" Component_="Windows"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
